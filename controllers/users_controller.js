@@ -40,5 +40,5 @@ module.exports.create = async function(req, res) {
 
 // sign in and create the session for the user
 module.exports.createSession = function(req, res) {
-
+    return res.redirect('/');
 }
