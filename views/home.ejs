@@ -5,3 +5,26 @@
 
 <p><%= user.name %></p>
 <p><%= user.email %></p>
+
+<div class="app-container">
+    <h1>To-Do App</h1>
+    <form id="task-form">
+      <input type="text" id="description" placeholder="Task Description" required>
+      <select id="category">
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="date" id="due-date">
+      <button type="submit" id="add-task-btn">Add Task</button>
+    </form>
+
+    <div class="action-buttons">
+      <button id="delete-tasks-btn" class="delete-btn">Delete Selected Tasks</button>
+    </div>
+
+    <div id="task-list" class="task-list">
+      <!-- Tasks will appear here -->
+    </div>
+  </div>
+  <script src="/js/home.js"></script>
