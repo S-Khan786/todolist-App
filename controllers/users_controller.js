@@ -2,16 +2,24 @@ const User = require('../models/user');
 
 // render the sign up page
 module.exports.signUp = function(req, res) {
+    if(req.isAuthenticated()) {
+        return res.redirect('/');
+    }
+
     res.render('user_sign_up', {
         title: 'todoList | Sign Up'
-    })
+    });
 }
 
 // render the sign in page
 module.exports.signIn = function(req, res) {
+    if(req.isAuthenticated()) {
+        return res.redirect('/');
+    }
+
     res.render('user_sign_in', {
         title: 'todoList | Sign In'
-    })
+    });
 }
 
 // get the sign up data
