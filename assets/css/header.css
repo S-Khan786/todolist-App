@@ -1,0 +1,95 @@
+/* #header-layout nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2196f3;
+    color: white;
+    padding: 0 10px;
+    box-shadow: 1px 1px 1px 1px lightgray; }
+    #header-layout nav .mini-logo p {
+      margin: 15px 0;
+      font-size: 1.4rem;
+      font-weight: bold; }
+    #header-layout nav .auth-links ul {
+      display: flex;
+      list-style: none;
+      text-decoration: none; }
+      #header-layout nav .auth-links ul li {
+        margin-right: 10px; }
+        #header-layout nav .auth-links ul li a {
+          border: 2px solid black;
+          padding: 5px;
+          border-radius: 9px;
+          background-color: #ff0000; }
+    #header-layout nav a {
+      color: white;
+      text-decoration: none;
+      font-size: x-large;
+      font-weight: bold; }
+   */
+
+
+   #header-layout nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2196f3;
+    color: white;
+    padding: 0 10px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: background-color 0.3s ease;
+}
+
+#header-layout nav:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+}
+
+#header-layout nav .mini-logo p {
+    margin: 15px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+#header-layout nav .mini-logo p:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+#header-layout nav .auth-links ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+#header-layout nav .auth-links ul li {
+    margin-right: 10px;
+    position: relative;
+}
+
+#header-layout nav .auth-links ul li a {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 9px;
+    background-color: #ff0000;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#header-layout nav .auth-links ul li a:hover {
+    background-color: #ff4d4d; /* Lighter red on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+#header-layout nav a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#header-layout nav a:hover {
+    color: #ff9800; /* Orange on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
