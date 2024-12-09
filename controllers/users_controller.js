@@ -1,6 +1,3 @@
-module.exports.profile = function(req, res) {
-    res.end('<h1>User Profile<\h1>')
-}
 
 // render the sign up page
 module.exports.signUp = function(req, res) {
@@ -14,4 +11,14 @@ module.exports.signIn = function(req, res) {
     res.render('user_sign_in', {
         title: 'todoList | Sign In'
     })
+}
+
+// get the sign up data
+module.exports.create = function(req, res) {
+
+}
+
+// sign in and create the session for the user
+module.exports.createSession = function(req, res) {
+
 }
