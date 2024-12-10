@@ -1,54 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>To-Do List App</title>
-</head>
-<body>
-    <h1>To-Do List App</h1>
-    <p>A simple and functional To-Do List application built using Full Stack Development technologies.</p>
+# To-Do List App
 
-    <h2>Features</h2>
-    <ul>
-        <li>User Sign-Up and Sign-In functionality</li>
-        <li>Create tasks with:
-            <ul>
-                <li>Description</li>
-                <li>Category</li>
-                <li>Due Date</li>
-            </ul>
-        </li>
-        <li>View all tasks in a list</li>
-        <li>Delete individual tasks</li>
-    </ul>
+A simple and functional To-Do List application built using Full Stack Development technologies.
 
-    <h2>Installation</h2>
-    <ol>
-        <li>Clone the repository:
-            <pre>git clone &lt;repository-url&gt;</pre>
-        </li>
-        <li>Navigate to the project directory:
-            <pre>cd todolist</pre>
-        </li>
-        <li>Install dependencies:
-            <pre>npm install</pre>
-        </li>
-        <li>Start the application:
-            <pre>npm start</pre>
-        </li>
-    </ol>
+## Features
+- User Sign-Up and Sign-In functionality
+- Create tasks with:
+  - Description
+  - Category
+  - Due Date
+- View all tasks in a list
+- Delete individual tasks
 
-    <h2>Usage</h2>
-    <ol>
-        <li>Sign up or sign in to the application.</li>
-        <li>Create tasks by providing a description, category, and due date.</li>
-        <li>View your tasks in the list displayed on the homepage.</li>
-        <li>Delete tasks using the delete button next to each task.</li>
-    </ol>
+## Frontend Framework
+The frontend is built using **HTML**, **CSS**, and **JavaScript**. The task list, user authentication, and task management functionalities are rendered dynamically.
 
-    <h2>License</h2>
-    <p>This project is licensed under the ISC License.</p>
+## Backend Framework
+The backend is built with **Node.js** and **Express.js**. It handles user authentication, task creation, task deletion, and serves data to the frontend. **MongoDB** is used to store tasks and user information, with Mongoose as an ODM (Object Document Mapper).
 
-    <h2>Author</h2>
-    <p>Created by Sahil Khan</p>
-</body>
-</html>
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+2. Navigate to the project directory:
+   ```bash
+   cd todolist
+3. Install dependencies:
+   ```bash
+   npm install
+4. Start the application:
+   ```bash
+   npm start
+
+## Usage
+- Sign up or sign in to the application.
+- Create tasks by providing a description, category, and due date.
+- View your tasks in the list displayed on the homepage.
+- Delete tasks using the delete button next to each task.
+
+## License
+This project is licensed under the ISC License.
+
+## Author
+Created by Sahil Khan
+
+
+
