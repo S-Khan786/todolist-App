@@ -8,5 +8,6 @@ const passport = require('passport');
 router.get('/', passport.checkAuthentication, homeController.home);
 
 router.use('/users', require('./users'));
+router.use('/tasks', require('./tasks'));
 
 module.exports = router;
