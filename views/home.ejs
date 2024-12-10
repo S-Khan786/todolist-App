@@ -17,7 +17,7 @@
 
     <div id="task-list" class="task-list">
         <% tasks.forEach(function(task) { %>
-            <div class="task-item <%= task.completed ? 'completed' : '' %>">
+            <div class="task-item">
                 <div class="task-details">
                     <p><%= task.desc %></p>
                     <small>Due: <%= new Date(task.due_date).toDateString() %></small>
@@ -25,7 +25,7 @@
                 <span class="task-category <%= task.category.toLowerCase() %>">
                     <%= task.category %>
                 </span>
-
+    
                 <!-- Individual Delete Button for Each Task -->
                 <form action="/tasks/delete/<%= task._id %>" method="POST" class="delete-task-form">
                     <button type="submit" class="delete-btn">✖</button>
@@ -33,6 +33,7 @@
             </div>
         <% }); %>
     </div>
+    
 </div>
 
 <script>
@@ -47,6 +48,3 @@
         });
     });
 </script>
-
-
-
